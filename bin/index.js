@@ -114,7 +114,6 @@ if (process.stdin.isTTY) {
   async function processInput() {
     for await (const chunk of process.stdin) data += chunk;
 
-    // process all the data and write it back to stdout
     console.log(haveACow(data.replace(/\n$/, '')));
   }
 
