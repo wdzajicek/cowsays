@@ -88,7 +88,7 @@ ${cap}`);
   }
 }
 
-// Construct our cow parts
+// Assemble our cow parts
 const haveACow = text => pipe(
   text,
   wrapText,
@@ -109,7 +109,7 @@ if (process.stdin.isTTY) {
 } else {
   // Handle piped data:
   // e.g. `echo "hello" | cowsays`
-  let data = "";
+  let data = '';
 
   async function processInput() {
     for await (const chunk of process.stdin) data += chunk;
