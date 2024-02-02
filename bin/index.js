@@ -105,7 +105,7 @@ if (process.stdin.isTTY) {
 
   const input = process.argv[2];
 
-  console.log(haveACow(input));
+  process.stdout.write(haveACow(input) + '\n');
 } else {
   // Handle piped data:
   // e.g. `echo "hello" | cowsays`
@@ -114,7 +114,7 @@ if (process.stdin.isTTY) {
   async function processInput() {
     for await (const chunk of process.stdin) data += chunk;
 
-    console.log(haveACow(data.replace(/\n$/, '')));
+    process.stdout.write(haveACow(data.replace(/\n$/, '')) + '\n');
   }
 
   processInput();
