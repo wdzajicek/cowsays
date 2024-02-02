@@ -30,8 +30,8 @@ The original cowsay Homebrew formulae has been deprecated and I wanted a replace
   * Only does the default cowsay cow (`default.cow` from the original cowsay)
   * No changing eyes, tongue, or thought bubbles (this wouldn't be that difficult to do)
 
-I also decided to maintain any newline characters from the input text and chop them in length.
-The original cowsay command strips newline characters and then chops each line to about 40 characters long.
+I also decided to maintain any newline characters from the input text and not limit them in length.
+The original cowsay strips newline characters and then chops each line to about 40 characters long.
 
 ## Installation
 
