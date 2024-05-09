@@ -15,7 +15,7 @@ const addCow = text => `${text}
 
 // Return the longest item from an array
 function findLongest(array) {
-  let longestWord = "";
+  let longestWord = '';
 
   array.forEach(word => {
     if(word.length > longestWord.length) {
@@ -109,6 +109,9 @@ if (process.stdin.isTTY) {
 } else {
   // Handle piped data:
   // e.g. `echo "hello" | cowsays`
+  if (process.argv.slice(2).length > 0) {
+    console.log(process.argv.slice(2));
+  }
   let data = '';
 
   async function processInput() {
