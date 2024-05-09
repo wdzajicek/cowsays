@@ -40,7 +40,7 @@ Use the Node.js version specified in project's `.nvmrc` file.
 **Note:** command used is `cowsays` (with an "s") to not interfere with original `cowsay` command if installed.
 
 ```bash
-git clone <git@github.com:wdzajicek/cowsays.git>
+git clone git@github.com:wdzajicek/cowsays.git
 cd cowsays
 npm i -g .
 ```
